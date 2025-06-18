@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(254, 237, 236, 0.09);
+  background: #04070d;
+}
+
+.link {
+  color: rgba(245, 245, 245, 0.6);
+}
+
+.button {
+  fill: #292929;
+}
+
+.box {
+  border-radius: 8px;
+  border: 2px solid #424242;
+
+  opacity: 0.75;
+  background: #042428;
+
+  box-shadow: 0px 3.5px 0px 0px #424242;
+}
+
+.slice {
+  color: #d6d6d6;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.084px;
+}

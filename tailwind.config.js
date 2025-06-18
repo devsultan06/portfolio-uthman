@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        orange: "#FFB86A", // Orange
+        green: "#11A3AC", // Orange
       
       },
       fontFamily: {
