@@ -30,57 +30,62 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="flex navbar text-[16px] font-[400] justify-between items-center px-[70px] py-[16px] ">
-                <div className="flex items-center max-900:space-x-[20px] max-600:space-x-[32px]">
-                    <div className="flex items-center space-x-[8px]">
-                        <img src="/images/logo.png" alt="" className=" rounded-full" />
+            <div className="fixed top-0 left-0 right-0 z-20">
+                <div className="flex  navbar text-[16px] font-[400] justify-between items-center px-[70px] py-[16px] ">
+                    <div className="flex items-center max-900:space-x-[20px] max-600:space-x-[32px]">
+                        <div className="flex items-center space-x-[8px]">
+                            <img src="/images/logo.png" alt="" className=" rounded-full" />
+                        </div>
+
+
                     </div>
 
+                    <div className="block max-900:hidden relative z-30">
+                        <ul className="flex">
+                            {navLinks.slice(0, 3).map((link) => {
+                                const isActive = location.pathname === link.href;
+                                return (
+                                    <li key={link.href} className="text-[16px]">
+                                        <Link
+                                            to={link.href}
+                                            className={`py-[16px] flex gap-[11px] items-center max-900:px-[15px] px-[40px] transition-all ${isActive ? "text-green font-[700]" : "link font-[400]"
+                                                }`}
+                                        >
+                                            {link.label}
 
-                </div>
+                                            <div className="box py-[3px] flex  gap-[4px] px-[10px]">
+                                                <img src="/images/vt2.svg" alt="arrow" className="" />
+                                                <div className="slice">
+                                                    {link.label.slice(0, 1)}
 
-                <div className="block max-900:hidden relative z-30">
-                    <ul className="flex">
-                        {navLinks.slice(0, 3).map((link) => {
-                            const isActive = location.pathname === link.href;
-                            return (
-                                <li key={link.href} className="text-[16px]">
-                                    <Link
-                                        to={link.href}
-                                        className={`py-[16px] flex gap-[11px] items-center max-900:px-[15px] px-[40px] transition-all ${isActive ? "text-green font-[700]" : "link font-[400]"
-                                            }`}
-                                    >
-                                        {link.label}
-
-                                        <div className="box py-[3px] flex  gap-[4px] px-[10px]">
-                                            <img src="/images/vt2.svg" alt="arrow" className="" />
-                                            <div className="slice">
-                                                {link.label.slice(0, 1)}
-
+                                                </div>
                                             </div>
-                                        </div>
-                                    </Link>
-                                </li>
-                            );
-                        })}
-                    </ul>
-                </div>
+                                        </Link>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
 
-                <div className="block max-900:hidden relative z-30">
-                    <Link
-                        to="/contact"
-                        className={`py-[11px] px-[70px] text-[16px] font-[400] leading-[20px] text-white button max-900:px-[15px]  transition-all ${location.pathname === "/contact"
-                            ? ""
-                            : ""
-                            }`}
+                    <div className="block max-900:hidden relative z-30 rounded-[8px]"
                     >
-                        Contact Us
-                    </Link>
+                        <Link
+                            to="/contact"
+
+                            className={` text-[16px] font-[500]  leading-[20px] button max-900:px-[15px]  transition-all ${location.pathname === "/contact"
+                                ? ""
+                                : ""
+                                }`}
+                        >
+                            Contact Us
+                        </Link>
+                    </div>
+
+                    <div className="menu px-[24px] hidden max-900:block relative z-30 cursor-pointer " onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
+                        <img src="/images/menu.png" alt="menu" className=" " />
+                    </div>
                 </div>
 
-                <div className="menu px-[24px] hidden max-900:block relative z-30 cursor-pointer " onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
-                    <img src="/images/menu.png" alt="menu" className=" " />
-                </div>
             </div>
 
 

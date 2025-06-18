@@ -7,8 +7,9 @@ body {
 }
 
 .navbar {
-  border-bottom: 1px solid rgba(254, 237, 236, 0.09);
   background: #04070d;
+
+  border-bottom: 1px solid rgba(254, 237, 236, 0.09);
 }
 
 .link {
@@ -16,7 +17,28 @@ body {
 }
 
 .button {
-  fill: #292929;
+  padding: 0.75rem 2rem;
+
+  border-radius: 10px;
+  border: 1px solid #032a22;
+
+  background: #0fb492;
+
+  box-shadow: 2px 2px 0px 0px #032a22;
+
+  color: black;
+}
+
+.button2 {
+  padding: 0.75rem 2rem;
+
+  border-radius: 10px;
+  border: 1px solid rgba(242, 242, 242, 0.6);
+
+
+  box-shadow: 2px 2px 0px 0px #032a22;
+
+  color: #FFF;
 }
 
 .box {
@@ -36,6 +58,12 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
   letter-spacing: -0.084px;
+}
+
+.about {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+
 }
