@@ -5,12 +5,7 @@ export default {
     extend: {
       colors: {
         orange: "#FFB86A", // Orange
-        slate: "#314158", // Slate
-        slate400: "#90A1B9", // Slate 400
-        slate50: "#F8FAFC", // Slate 50
-        slate900: "#0F172B", // Slate 900
-        slate500: "#62748E",
-        text: "#111827", // Dark Gray
+      
       },
       fontFamily: {
         firacode: ["Fira Code", "monospace"],
