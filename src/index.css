@@ -29,16 +29,29 @@ body {
   color: black;
 }
 
+.view {
+  padding: 12px 16px;
+
+  border-radius: 10px;
+  border: 1px solid #032a22;
+
+  background: #0fb492;
+
+  box-shadow: 2px 2px 0px 0px #032a22;
+
+  color: black;
+  width:164px;
+}
+
 .button2 {
   padding: 0.75rem 2rem;
 
   border-radius: 10px;
   border: 1px solid rgba(242, 242, 242, 0.6);
 
-
   box-shadow: 2px 2px 0px 0px #032a22;
 
-  color: #FFF;
+  color: #fff;
 }
 
 .box {
@@ -65,5 +78,13 @@ body {
 .about {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
+}
 
+.featuredp {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card {
+  border-radius: 24px;
+  border: 1px solid  #1c1c21;
 }

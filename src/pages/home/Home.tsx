@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
 import Hello from "./components/Hello";
+import Featured from "./components/Featured";
 
 const SVG = () => {
     return (
@@ -45,29 +46,32 @@ const Home = () => {
 
     }, []);
     return (
-        <div className="font-firacode relative overflow-hidden">
+        <div className="font-firacode bg-[#04070D]  relative overflow-hidden">
             <Navbar />
 
-            <div className="absolute -top-[40px] right-0 max-900:right-[0px]  z-30">
+            <div className="absolute -top-[40px] right-0 max-900:right-[0px]  z-50">
                 <SVG />
             </div>
 
-            <div className="absolute top-[80px] right-[0px]  z-30">
+            <div className="absolute top-[80px] right-[0px]  z-50">
                 <SVG2 />
             </div>
 
 
-            <div className="absolute -top-[0px] left-0 max-900:right-[0px]  z-30">
+            <div className="absolute -top-[0px] left-0 max-900:right-[0px]  z-50">
                 <SVG3 />
             </div>
 
-            <div className="absolute top-[0px] -left-[50px]  z-30">
+            <div className="absolute top-[0px] -left-[50px]  z-50">
                 <SVG4 />
             </div>
 
 
 
             <Hello />
+
+       
+            <Featured />
 
             <Footer />
 

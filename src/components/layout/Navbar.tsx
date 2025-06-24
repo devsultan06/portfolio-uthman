@@ -30,7 +30,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="fixed top-0 left-0 right-0 z-20">
+            <div className="fixed top-0 left-0 right-0 z-50">
                 <div className="flex  navbar text-[16px] font-[400] justify-between items-center px-[70px] py-[16px] ">
                     <div className="flex items-center max-900:space-x-[20px] max-600:space-x-[32px]">
                         <div className="flex items-center space-x-[8px]">
