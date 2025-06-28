@@ -21,14 +21,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     title,
     description,
     buttonText,
-    buttonLink,
     image,
 }) => {
     const imageWrapperClass = imagePositionMap[title] || "w-full md:w-1/2";
 
     return (
         <div className=" card gap-6 pt-[40px] px-[40px] bg-[#04070D] z-40 pb-[28px] md:gap-10 mb-16 relative h-[361px]">
-            {/* Text section */}
             <div className="w-full md:w-[65%]  text-left">
                 <h3 className="text-[20px] font-[400] leading-[150%] mb-[95px] text-[#E4E4E6]">{title}</h3>
                 <p className="text-[20px] font-[400] leading-[150%] mb-[26px] text-[#E4E4E6]">{description}</p>
@@ -42,7 +40,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     <img src="/images/arrow1.svg" alt="arrow" className="inline-block w-[20px h-[20px]] ml-[1px]" />
                 </Link>
             </div>
-            {/* Image section */}
             <div className={imageWrapperClass}>
                 <img src={image} alt={title} className="rounded-xl w-full" />
             </div>

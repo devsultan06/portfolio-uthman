@@ -3,6 +3,7 @@ import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
 import Hello from "./components/Hello";
 import Featured from "./components/Featured";
+import Experiences from "./components/Experiences";
 
 const SVG = () => {
     return (
@@ -70,8 +71,9 @@ const Home = () => {
 
             <Hello />
 
-       
+
             <Featured />
+            <Experiences />
 
             <Footer />
 

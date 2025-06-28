@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 
 const projects = [
@@ -95,6 +96,17 @@ const Featured = () => {
                     <ProjectCard key={index} {...project} />
                 ))}
             </div>
+            <Link
+                to="/contact"
+
+                className="text-[16px] font-[500] text-white inline-flex items-center mt-[48px] leading-[20px] more  transition-all"
+            >
+                View more
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                    <path d="M9.19263 18.0467L19.5408 10.177M13.9669 9.18125L19.8056 9.97564L19.0113 15.8144" stroke="white" stroke-width="1.5" />
+                </svg>            </Link>
+
         </div>
     )
 }

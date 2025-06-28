@@ -40,7 +40,7 @@ body {
   box-shadow: 2px 2px 0px 0px #032a22;
 
   color: black;
-  width:164px;
+  width: 164px;
 }
 
 .button2 {
@@ -86,5 +86,16 @@ body {
 
 .card {
   border-radius: 24px;
-  border: 1px solid  #1c1c21;
+  border: 1px solid #1c1c21;
+}
+
+.desc {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.more {
+  border-radius: 10px;
+  border: 1px solid #0fb492;
+  box-shadow: 2px 2px 0px 0px #032a22;
+  padding: 12px 16px;
 }
